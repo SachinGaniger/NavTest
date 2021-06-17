@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/oneFragment">
+
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="com.sachin.navtest.fragments.OneFragment"
+        android:label="OneFragment" >
+        <action
+            android:id="@+id/action_oneFragment_to_oneFragmentList"
+            app:destination="@id/oneFragmentList" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.sachin.navtest.fragments.TwoFragment"
+        android:label="TwoFragment" >
+        <action
+            android:id="@+id/action_twoFragment_to_twoFragmentDetails"
+            app:destination="@id/twoFragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.sachin.navtest.fragments.ThreeFragment"
+        android:label="ThreeFragment" >
+        <action
+            android:id="@+id/action_threeFragment_to_threeFragmentList"
+            app:destination="@id/threeFragmentList" />
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph" />
+    <fragment
+        android:id="@+id/oneFragmentDetails"
+        android:name="com.sachin.navtest.fragments.OneFragmentDetails"
+        android:label="OneFragmentDetails" />
+    <fragment
+        android:id="@+id/oneFragmentList"
+        android:name="com.sachin.navtest.fragments.OneFragmentList"
+        android:label="OneFragmentList" >
+        <action
+            android:id="@+id/action_oneFragmentList_to_oneFragmentDetails"
+            app:destination="@id/oneFragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeFragmentDetails"
+        android:name="com.sachin.navtest.fragments.ThreeFragmentDetails"
+        android:label="ThreeFragmentDetails" />
+    <fragment
+        android:id="@+id/threeFragmentList"
+        android:name="com.sachin.navtest.fragments.ThreeFragmentList"
+        android:label="ThreeFragmentList" >
+        <action
+            android:id="@+id/action_threeFragmentList_to_threeFragmentDetails"
+            app:destination="@id/threeFragmentDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragmentDetails"
+        android:name="com.sachin.navtest.fragments.TwoFragmentDetails"
+        android:label="TwoFragmentDetails" >
+        <action
+            android:id="@+id/action_twoFragmentDetails_to_twoFragmentList"
+            app:destination="@id/twoFragmentList" />
+    </fragment>
+    <fragment
+        android:id="@+id/twoFragmentList"
+        android:name="com.sachin.navtest.fragments.TwoFragmentList"
+        android:label="TwoFragmentList" />
+
+</navigation>

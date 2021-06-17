@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/oneFragment"
+        android:title="First"
+        android:icon="@drawable/ic_music_video_black_24dp"
+        />
+
+    <item
+        android:id="@+id/twoFragment"
+        android:title="Second"
+        android:icon="@drawable/ic_near_me_black_24dp"
+        />
+
+    <item
+        android:id="@+id/threeFragment"
+        android:title="Third"
+        android:icon="@drawable/ic_photo_camera_black_24dp"
+        />
+
+</menu>
