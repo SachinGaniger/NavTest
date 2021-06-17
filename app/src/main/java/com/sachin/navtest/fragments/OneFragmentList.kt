@@ -31,6 +31,9 @@ class OneFragmentList: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 //        val navController = NavHostFragment.findNavController(this)
+        fragmentOneBinding.btNextOneList.setOnClickListener {
+            findNavController().navigate(R.id.action_oneFragmentList_to_oneFragmentDetails)
+        }
 
         }
 

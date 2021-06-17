@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.sachin.navtest.R
 import com.sachin.navtest.databinding.FragmentOneBinding
 import com.sachin.navtest.databinding.FragmentThreeBinding
@@ -29,6 +30,7 @@ class ThreeFragmentDetails: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 //        val navController = NavHostFragment.findNavController(this)
+
 
     }
 

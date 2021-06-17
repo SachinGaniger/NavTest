@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.sachin.navtest.R
 import com.sachin.navtest.databinding.FragmentOneBinding
 import com.sachin.navtest.databinding.FragmentThreeBinding
@@ -29,6 +30,9 @@ class ThreeFragmentList: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 //        val navController = NavHostFragment.findNavController(this)
+        fragmentThreeBinding.btNextThreeList.setOnClickListener {
+            findNavController().navigate(R.id.action_threeFragmentList_to_threeFragmentDetails)
+        }
 
     }
 

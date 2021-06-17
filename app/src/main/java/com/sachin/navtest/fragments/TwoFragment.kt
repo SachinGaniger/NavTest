@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.sachin.navtest.R
 import com.sachin.navtest.databinding.FragmentThreeBinding
 import com.sachin.navtest.databinding.FragmentTwoBinding
@@ -28,6 +29,9 @@ class TwoFragment: Fragment(R.layout.fragment_two) {
         super.onViewCreated(view, savedInstanceState)
 
 //        val navController = NavHostFragment.findNavController(this)
+        fragmentTwoBinding.btNextTwo.setOnClickListener {
+            findNavController().navigate(R.id.action_twoFragment_to_twoFragmentList)
+        }
 
     }
 
